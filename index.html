@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo-List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://bouncecss.bookie0.repl.co/bounce.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar bg-light">
+    <div class="container-fluid">
+      <form class="d-flex mx-auto" role="search">
+        <input class="form-control me-2 w-73" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success mx-2 w-20" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Todo list <span><i class="bi bi-list-check"></i></span></h1>
+        <p class="lead text-muted">Dont forget to do your Task!!!!. This will let you know to do yor task.</p>
+        <p class="lead text-muted">Click "Create a Task" if not started yet or Click "Add-Task" if want to add
+          task.</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2 mx-2" id="create-task">Create a Task</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <form action="" id="Task-form">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Date and time</label>
+      <input type="datetime-local" class="form-control" id="exampleFormControlInput1" placeholder="Date and time"
+        required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput2" class="form-label">Day</label>
+      <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Day task to be done" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput3" class="form-label">Task-name</label>
+      <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Task-name" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Task description</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+    <div id="pin-btn-cntainer">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        id="Clip-button">
+        Clip task
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="notificationPopup">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </form>
+
+  <div id="clip-board">
+    <span id="task-counter">Task added: <span id="taskNumber">0</span></span>
+    <div id="taskboard">
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<body>
+</body>
+
+</html>

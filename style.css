@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+#Task-form{
+    display: none;
+}
+#pin-btn-cntainer{
+    display: flex;
+    justify-content: center;
+}
+#Clip-button{
+    width: 25vh;
+}
+#date-time{
+    margin-left: 9vh;
+}
